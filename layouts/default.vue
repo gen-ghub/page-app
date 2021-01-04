@@ -3,7 +3,7 @@
     <main>
       <Nuxt />
     </main>
-    <!-- <Footer /> -->
+    <Footer />
   </section>
 </template>
 

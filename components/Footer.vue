@@ -1,6 +1,6 @@
 <template>
-    <footer>
-      <div class="grid grid-cols-6 gap-4 pt-20 pb-10">
+    <footer class="bg-black">
+      <div class="grid grid-cols-6 gap-4 pt-20 pb-10 ">
         <div class="col-start-2 col-span-4 flex justify-evenly">
           <!-- <div>
             <ul>
@@ -12,9 +12,9 @@
           </div> -->
         </div>
       </div>
-      <div class="flex justify-center">
-        <p class="copyright">&copy; 2021 </p>
-      </div>
+        <div class="flex justify-center text-white bg-black bg-opacity-50 py-6">
+          <p class="copyright font-thin text-sm">&copy; 2021 </p>
+        </div>
     </footer>
 </template>
 
@@ -25,12 +25,5 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-footer{
-  color: #fff;
-  padding: 20px;
-  background-color: #022444;
-}
-li {
-  padding-bottom: 2vh;
-}
+
 </style>
