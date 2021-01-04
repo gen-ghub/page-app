@@ -1,0 +1,36 @@
+<template>
+    <footer>
+      <div class="grid grid-cols-6 gap-4 pt-20 pb-10">
+        <div class="col-start-2 col-span-4 flex justify-evenly">
+          <!-- <div>
+            <ul>
+              <li><router-link to="/">トップページ</router-link></li>
+              <li><nuxt-link class="tracking-widest font-thin " to="/Link01">事業内容</nuxt-link></li>
+              <li><nuxt-link class="tracking-widest font-thin " to="/Link02">企業情報</nuxt-link></li>
+              <li><nuxt-link class="tracking-widest font-thin " to="/Contact">お問い合わせ</nuxt-link></li>
+            </ul>
+          </div> -->
+        </div>
+      </div>
+      <div class="flex justify-center">
+        <p class="copyright">&copy; 2021 </p>
+      </div>
+    </footer>
+</template>
+
+<script>
+export default {
+
+};
+</script>
+
+<style lang="scss" scoped>
+footer{
+  color: #fff;
+  padding: 20px;
+  background-color: #022444;
+}
+li {
+  padding-bottom: 2vh;
+}
+</style>
