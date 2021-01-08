@@ -1,40 +1,57 @@
 <template>
   <section class="contact-container border-b-2">
-    <div class="flex justify-center ">
+    <div class="flex justify-center">
       <template v-if="!finished">
         <form name="contact" method="POST" data-netlify="true" @submit.prevent>
           <p class="flex flex-col text-2xl mb-6">
-            <label class=" pb-2">
-              お名前
-            </label>
-              <input class="rounded" v-model="form.name" type="text" name="name" />
+            <label class="pb-2"> お名前 </label>
+            <input
+              class="rounded"
+              v-model="form.name"
+              type="text"
+              name="name"
+            />
           </p>
           <p class="flex flex-col text-2xl mb-6">
-            <label class=" pb-2">
-              メールアドレス
-            </label>
-              <input class="rounded" v-model="form.email" type="email" name="email" />
+            <label class="pb-2"> メールアドレス </label>
+            <input
+              class="rounded"
+              v-model="form.email"
+              type="email"
+              name="email"
+            />
           </p>
           <p class="flex flex-col text-2xl mb-8">
-            <label class=" pb-2">
-              お問い合わせ内容
-            </label>
-              <textarea class="rounded h-40" id="form-content" v-model="form.content" name="content" />
+            <label class="pb-2"> お問い合わせ内容 </label>
+            <textarea
+              class="rounded h-40"
+              id="form-content"
+              v-model="form.content"
+              name="content"
+            />
           </p>
           <div class="" v-show="false">
             <label for="message">スパムでない場合は空欄</label>
-            <input type="text" name="bot-field" v-model="botField"/>
+            <input type="text" name="bot-field" v-model="botField" />
           </div>
           <p class="flex flex-col text-2xl">
-            <button class="rounded border border-light-blue-500 border-opacity-75 py-2  hover:bg-blue-900 " @click="handleSubmit" v-text="'送信'" />
+            <button
+              class="rounded border border-light-blue-500 border-opacity-75 py-2 hover:bg-blue-900"
+              @click="handleSubmit"
+              v-text="'送信'"
+            />
           </p>
         </form>
       </template>
       <template v-else>
-        <div class="text-4xl  p-20">
+        <div class="text-4xl p-20">
           <p v-text="'お問い合わせ頂きありがとうございました。'" />
-          <div class="flex justify-center ">
-            <nuxt-link class="rounded  mt-20 py-2 px-20 hover:bg-blue-900" to="/" v-text="'TOPへ'" />
+          <div class="flex justify-center">
+            <nuxt-link
+              class="rounded mt-20 py-2 px-20 hover:bg-blue-900"
+              to="/"
+              v-text="'TOPへ'"
+            />
           </div>
         </div>
       </template>
@@ -49,9 +66,9 @@ export default {
       form: {
         name: '',
         email: '',
-        content: ''
+        content: '',
       },
-      finished: false
+      finished: false,
     }
   },
   methods: {
@@ -64,30 +81,29 @@ export default {
     },
     handleSubmit() {
       const axiosConfig = {
-        header: { 'Content-Type': 'application/x-www-form-urlencoded' }
+        header: { 'Content-Type': 'application/x-www-form-urlencoded' },
       }
       axios
         .post(
           '/',
           this.encode({
             'form-name': 'contact',
-            ...this.form
+            ...this.form,
           }),
           axiosConfig
         )
         .then(() => {
           this.finished = true
         })
-    }
-  }
+    },
+  },
 }
 </script>
 <style>
 .contact-container {
   padding-top: 20vh;
-
 }
-p{
+p {
   padding: 10px;
 }
 </style>
