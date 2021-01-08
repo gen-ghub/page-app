@@ -7,16 +7,16 @@ media_folder: static/img
 public_folder: /img
 
 collections:
-	- name: 'blog'
-	identifier_field: slug
-	label: 'ブログ'
-	format: 'json'
-	folder: 'assets/content/blog'
-	create: true
-	slug: '{{slug}}'
-  editor:
+- name: 'blog'
+identifier_field: slug
+label: 'ブログ'
+format: 'json'
+folder: 'assets/content/blog'
+create: true
+slug: '{{slug}}'
+editor:
 	preview: false
-  fields:
+fields:
 	- { label: 'タイトル', name: 'title', widget: 'string' }
 	- { label: '説明', name: 'description', widget: 'string' }
 	- { label: 'スラッグ', name: 'slug', widget: 'string' }
