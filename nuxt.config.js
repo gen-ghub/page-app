@@ -51,4 +51,19 @@ export default {
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }
+  generate: {
+    async routes() {
+      const pages = await axios
+        .get('https://happy-shaw.microcms.io/api/v1/blog?limit=100', {
+          headers: { 'X-API-KEY': '190b409a-566e-4d65-9583-e4876da6e482' }
+        })
+        .then((res) =>
+          res.data.contents.map((content) => ({
+            route: `/${content.id}`,
+            payload: content
+          }))
+        )
+      return pages
+    }
+  }
 }
