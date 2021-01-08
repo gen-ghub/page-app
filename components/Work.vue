@@ -23,11 +23,11 @@
             <p>誰かの「らしさ」-生き方を変えるかもしれない</p>
             <p>魅力的な作品、世界の中を生きることで伝えていく。</p>
           </div>
-          <nuxt-link to="/Contact" class="mb-32">
+          <nuxt-link to="/Link02" class="mb-32">
             <button
               class="p-2 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700"
             >
-              Contact
+              Entertainment
             </button>
           </nuxt-link>
         </div>
@@ -62,11 +62,11 @@
             <p>誰かの「らしさ」-生き方を変えるかもしれない</p>
             <p>魅力的な作品、世界の中を生きることで伝えていく。</p>
           </div>
-          <nuxt-link to="/Link01" class="mb-32">
+          <nuxt-link to="/Link03" class="mb-32">
             <button
               class="p-2 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700"
             >
-              service
+              Translation
             </button>
           </nuxt-link>
         </div>
@@ -81,18 +81,18 @@
             YAMADA HANAKO
           </h1>
           <div>
-            <nuxt-link to="/Contact">
+            <nuxt-link to="/Link04">
               <button
                 class="tracking-widest text-lg p-2 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700"
               >
                 profile
               </button>
             </nuxt-link>
-            <nuxt-link to="/Contact">
+            <nuxt-link to="/Link05">
               <button
                 class="tracking-widest text-lg p-2 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700"
               >
-                biography
+                blog
               </button>
             </nuxt-link>
           </div>

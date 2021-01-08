@@ -9,16 +9,22 @@
         <nav>
       <ul class="lg:text-xl flex content-center mr-8 h-full">
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link01"></nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Link01">News</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link02"></nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Link02">Entertainment</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link03"></nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Link03">Translation</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Contact">お問い合わせ</nuxt-link>
+          <nuxt-link class="tracking-widest font-thin " to="/Link04">profile</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link class="tracking-widest font-thin " to="/Link05">Blog</nuxt-link>
+        </li>
+        <li>
+          <nuxt-link class="tracking-widest font-thin " to="/Contact">Contact</nuxt-link>
         </li>
       </ul>
     </nav>
