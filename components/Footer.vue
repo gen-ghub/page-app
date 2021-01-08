@@ -5,6 +5,7 @@
         <div>
           <h1 class="text-xl font-thin tracking-widest mb-4">Link</h1>
           <ul class="text-sm leading-relaxed">
+            <li class="mb-2"><nuxt-link class="" to="/">Home</nuxt-link></li>
             <li class="mb-2"><nuxt-link class="" to="/Link01">News</nuxt-link></li>
             <li class="mb-2"><nuxt-link class="" to="/Link02">Entertainment</nuxt-link></li>
             <li class="mb-2"><nuxt-link class="" to="/Link03">Translation</nuxt-link></li>
