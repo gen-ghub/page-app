@@ -1,44 +1,48 @@
 <template>
+<div>
+  <Header />
+  <div class="relative">
+    <img class="contact-img" src="~/assets/sun.jpg" />
+    <h2 class="contact-title absolute text-white font-serif">Be free within constraints</h2>
+    <h4 class="contact-sab-title absolute text-white font-serif">CONTACT</h4>
+  </div>
   <section class="contact-container border-b-2">
     <div class="flex justify-center">
       <template v-if="!finished">
-        <form name="contact" method="POST" data-netlify="true" @submit.prevent>
-          <p class="flex flex-col text-2xl mb-6">
-            <label class="pb-2"> お名前 </label>
+        <form class="mb-20" name="contact" method="POST" data-netlify="true" @submit.prevent>
+          <h4 class="font-serif">Question and Offer</h4>
+          <p class="flex flex-col mb-2">
             <input
-              class="rounded"
+              class="pl-2 border border-gray-400 mb-2"
               v-model="form.name"
               type="text"
               name="name"
+              placeholder="Name"
             />
-          </p>
-          <p class="flex flex-col text-2xl mb-6">
-            <label class="pb-2"> メールアドレス </label>
             <input
-              class="rounded"
+              class="pl-2 border border-gray-400 mb-2"
               v-model="form.email"
               type="email"
               name="email"
+              placeholder="Email"
             />
-          </p>
-          <p class="flex flex-col text-2xl mb-8">
-            <label class="pb-2"> お問い合わせ内容 </label>
             <textarea
-              class="rounded h-40"
+              class="text-sm pl-2 border border-gray-400 h-40"
               id="form-content"
               v-model="form.content"
               name="content"
+              placeholder="Write a message..."
             />
           </p>
           <div class="" v-show="false">
             <label for="message">スパムでない場合は空欄</label>
             <input type="text" name="bot-field" v-model="botField" />
           </div>
-          <p class="flex flex-col text-2xl">
+          <p class="flex flex-col text-xl">
             <button
-              class="rounded border border-light-blue-500 border-opacity-75 py-2 hover:bg-blue-900"
+              class="contact-btn text-white rounded border border-gray-400 border-opacity-75 py-2 bg-gray-700 hover:bg-gray-900 "
               @click="handleSubmit"
-              v-text="'送信'"
+              v-text="'SEND'"
             />
           </p>
         </form>
@@ -57,6 +61,7 @@
       </template>
     </div>
   </section>
+</div>
 </template>
 <script>
 import axios from 'axios'
@@ -99,11 +104,34 @@ export default {
   },
 }
 </script>
-<style>
+<style lang="scss" scoped>
 .contact-container {
-  padding-top: 20vh;
+  padding-top: 10vh;
 }
 p {
   padding: 10px;
+}
+.contact-img{
+  height: 56vh;
+  width: 100vw;
+  object-fit: cover;
+}
+.contact-title{
+  top: 20vh;
+  left: 35vw;
+  font-size:2.5vw;
+  font-weight: 100;
+}
+.contact-sab-title{
+  top: 30vh;
+  left: 45vw;
+  font-size: 25px;
+}
+input{
+  width: 30vw;
+}
+
+.contact-btn{
+  width: 15vw;
 }
 </style>

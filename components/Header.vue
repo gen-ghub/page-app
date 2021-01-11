@@ -1,30 +1,30 @@
 <template>
-    <header class="fixed z-20 pt-10 pb-8 w-full  text-white tracking-widest font-thin font-serif">
+    <header class="pt-4 pb-4 w-full tracking-widest  ">
       <div class="grid sm:grid-cols-2 ">
-        <div class="ml-8 w-1/4">
+        <div class="flex justify-evenly">
           <router-link to="/">
-            <h1 class="text-4xl">タイトル</h1>
+            <h1 class="text-xl font-medium">タイトル</h1>
           </router-link>
         </div>
         <nav>
-      <ul class="lg:text-xl flex content-center mr-8 h-full">
+      <ul class="lg:text-xl flex justify-evenly mr-8 h-full font-thin">
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link01">News</nuxt-link>
+          <nuxt-link class="tracking-widest " to="/Link01">News</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link02">Entertainment</nuxt-link>
+          <nuxt-link class="tracking-widest  " to="/Link02">Entertainment</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link03">Translation</nuxt-link>
+          <nuxt-link class="tracking-widest  " to="/Link03">Translation</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link04">profile</nuxt-link>
+          <nuxt-link class="tracking-widest  " to="/Link04">Profile</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Link05">Blog</nuxt-link>
+          <nuxt-link class="tracking-widest  " to="/Link05">Blog</nuxt-link>
         </li>
         <li>
-          <nuxt-link class="tracking-widest font-thin " to="/Contact">Contact</nuxt-link>
+          <nuxt-link class="tracking-widest  " to="/Contact">Contact</nuxt-link>
         </li>
       </ul>
     </nav>

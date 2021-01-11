@@ -1,9 +1,9 @@
 <template>
   <main class="main">
     <h1 class="title">{{ title }}</h1>
-    <p class="publishedAt">{{ publishedAt }}</p>
+    <p class="day">{{ day }}</p>
     <p class="category">{{ category && category.name }}</p>
-    <div class="post" v-html="image"></div>
+    <img :src="image.url" alt="">
     <div class="post" v-html="content"></div>
   </main>
 </template>
