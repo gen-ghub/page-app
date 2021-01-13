@@ -9,7 +9,7 @@
   <section class="contact-container border-b-2">
     <div class="flex justify-center">
       <template v-if="!finished">
-        <form class="mb-20" name="contact" method="POST" data-netlify="true" @submit.prevent>
+        <form class="mb-20" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field" @submit.prevent>
           <h4 class="font-serif">Question and Offer</h4>
           <p class="flex flex-col mb-2">
             <input
