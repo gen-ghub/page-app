@@ -46,7 +46,7 @@
         </div>
       </section>
           <div class="flex justify-center items-center mb-20">
-            <nuxt-link class="col-start-5 col-span-1 border border-blue-900 px-12 py-2 rounded text-black hover:bg-gray-400  transition duration-700" to="/Link05">read more</nuxt-link>
+            <nuxt-link class="col-start-5 col-span-1 border border-blue-900 px-12 py-2 rounded text-black hover:bg-gray-400  transition duration-700" to="/Link01">read more</nuxt-link>
           </div>
     </section>
 </template>
