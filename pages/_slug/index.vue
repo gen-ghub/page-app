@@ -1,11 +1,14 @@
 <template>
-  <main class="main">
-    <h1 class="title">{{ title }}</h1>
-    <p class="day">{{ day }}</p>
-    <p class="category">{{ category && category.name }}</p>
-    <img :src="image.url" alt="">
-    <div class="post" v-html="content"></div>
-  </main>
+  <div>
+    <Header />
+    <main class="main">
+      <h1 class="title">{{ title }}</h1>
+      <p class="day">{{ day }}</p>
+      <p class="category">{{ category && category.name }}</p>
+      <img :src="image.url" alt="">
+      <div class="post" v-html="content"></div>
+    </main>
+  </div>
 </template>
 
 <script>

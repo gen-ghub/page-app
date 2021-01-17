@@ -7,12 +7,12 @@
     <section>
       <ul class="flex flex-wrap justify-center my-24">
         <li class="news-content-li" v-for="content in contents" :key="content.id">
-          <!-- <nuxt-link :to="`/${content.id}`"> -->
+          <nuxt-link :to="`/${content.id}/news`">
             <img class="news-content-image" :src="content.image.url" alt="" />
             <p class="news-content-day font-thin text-sm tracking-wider">{{ content.today}}</p>
             <h1 class="news-content-title tracking-widest">{{ content.title }}</h1>
             <p class="news-content-text font-extralight">{{ content.text }}</p>
-          <!-- </nuxt-link> -->
+          </nuxt-link>
         </li>
       </ul>
     </section>
