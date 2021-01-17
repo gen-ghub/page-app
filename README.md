@@ -1,4 +1,25 @@
 # page-app
+アプリ名は仮。
+コーポレートサイトと平行して作成。
+
+エンタメ事業と翻訳の仕事をされている、個人の紹介サイト。
+
+<br>
+
+## URL
+[サイトURL](https://happy-shaw-5a7ec7.netlify.app/)
+
+<br>
+
+## 使用技術
+- HTML
+- SCSS
+- Javascript
+- Vue
+- Nuxt 2.14.12
+- Netlify
+- tailwindcss 3.1.0
+
 
 ## Build Setup
 

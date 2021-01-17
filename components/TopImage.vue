@@ -13,3 +13,27 @@
     </div>
   </section>
 </template>
+
+<style lang="scss" scoped>
+  @media screen and (max-width: 425px){
+    h2{
+      font-size: 40px;
+    }
+  }
+    @media screen and (max-width: 375px){
+    h2{
+      font-size: 35px;
+    }
+    h4{
+      font-size: 20px;
+    }
+  }
+    @media screen and (max-width: 320px){
+    h2{
+      font-size: 30px;
+    }
+    h4{
+      font-size: 20px;
+    }
+  }
+</style>

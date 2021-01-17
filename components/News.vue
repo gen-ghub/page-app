@@ -59,4 +59,12 @@ img{
   height: 400px;
   width: 400px;
 }
+  @media screen and (max-width: 425px){
+
+  }
+    @media screen and (max-width: 375px){
+  }
+    @media screen and (max-width: 320px){
+
+  }
 </style>
