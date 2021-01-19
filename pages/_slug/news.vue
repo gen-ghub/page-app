@@ -2,10 +2,10 @@
   <div>
     <Header />
     <main class="main">
+      <img :src="image.url" alt="">
       <h1 class="title">{{ title }}</h1>
       <p class="day">{{ today }}</p>
-      <img :src="image.url" alt="">
-      <div class="post" v-html="content"></div>
+      <div class="post" v-html="text"></div>
     </main>
   </div>
 </template>

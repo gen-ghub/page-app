@@ -31,6 +31,7 @@ export default {
 .main {
   width: 960px;
   margin: 0 auto;
+  background-color: rgba(#b9b9b9ad, 0.2);
 }
 
 .title {
