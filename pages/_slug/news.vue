@@ -5,12 +5,14 @@
       <div class="topics-title flex justify-center ">
         <h1 class="tracking-widest">Topics</h1>
       </div>
-      <main class="main">
-        <img :src="image.url" alt="">
-        <h1 class="title">{{ title }}</h1>
-        <p class="day">{{ today }}</p>
-        <div class="post" v-html="text"></div>
-      </main>
+      <div class="flex justify-center">
+        <section class="main shadow-2xl">
+          <p class="day">{{ today }}</p>
+          <h1 class="title font-bold">{{ title }}</h1>
+          <img :src="image.url" alt="">
+          <div class="post" v-html="text"></div>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -41,43 +43,27 @@ export default {
   }
 }
 .main {
-  width: 960px;
-  margin: 0 auto;
-}
-
-.title {
-  margin-bottom: 20px;
-}
-
-.publishedAt {
-  margin-bottom: 40px;
-}
-
-.post {
-  & > h1 {
-    font-size: 30px;
-    font-weight: bold;
-    margin: 40px 0 20px;
-    background-color: #eee;
-    padding: 10px 20px;
-    border-radius: 5px;
+  padding: 40px;
+  margin-bottom: 5vh;
+  width: 55vw;
+  background-color: #fff;
+  border-top: 8px solid rgb(209, 136, 0);
+  .day{
+    margin-bottom: 4px;
   }
-
-  & > h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 40px 0 16px;
-    border-bottom: 1px solid #ddd;
+  .title {
+    margin-bottom: 20px;
+    font-size: 20px;
   }
-
-  & > p {
-    line-height: 1.8;
-    letter-spacing: 0.2px;
-  }
-
-  & > ol {
-    list-style-type: decimal;
-    list-style-position: inside;
+  img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 50px;
   }
 }
+
+
+
+
 </style>
