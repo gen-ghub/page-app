@@ -6,7 +6,7 @@
     </section>
     <section class="main flex justify-center ">
       <ul class="news-wrapper flex flex-wrap content-center ">
-        <li class="news-content-li " v-for="content in contents" :key="content.id">
+        <li class="news-content-li shadow-2xl" v-for="content in contents" :key="content.id">
           <nuxt-link :to="`/${content.id}/news`">
             <img class="news-content-image" :src="content.image.url" alt="" />
             <p class="news-content-day font-thin text-sm tracking-wider">{{ content.today}}</p>
@@ -37,7 +37,7 @@ export default {
 <style lang="scss" scoped>
 
 .main{
-  margin: 10vh 10vw;
+  margin: 10vh 8vw;
   .news-wrapper{
     padding-left: 2.5vw;
   }
@@ -57,12 +57,13 @@ export default {
   }
 }
 .news-content-li{
-  padding: 10px ;
-  margin-bottom: 50px;
+  padding: 20px;
+  margin: 0 10px 50px 10px;
+  border-top: 8px solid rgb(209, 136, 0);
 }
 .news-content-image{
-  height: 400px;
-  width: 400px;
+  height: 380px;
+  width: 380px;
   object-fit: cover;
 }
 .news-content-day{
@@ -74,11 +75,11 @@ export default {
   margin-bottom: 10px;
 }
 .news-content-text{
-  width: 400px;
+  width: 380px;
 }
 @media screen and (max-width: 1440px){
 .main{
-  margin: 10vh 5vw;
+  margin: 10vh 3vw;
   .news-wrapper{
     padding-left: 20px;
   }
@@ -86,7 +87,7 @@ export default {
 }
 @media screen and (max-width: 1024px){
 .main{
-  margin: 10vh 5vw;
+  margin: 10vh 3vw;
   .news-wrapper{
     padding-left: 4vw;
   }
@@ -94,7 +95,7 @@ export default {
 }
 @media screen and (max-width: 768px){
 .main{
-  margin: 10vh 10vw;
+  margin: 10vh 8vw;
   .news-wrapper{
     padding-left: 13vw;
   }
@@ -102,7 +103,7 @@ export default {
 }
 @media screen and (max-width: 425px){
 .main{
-  margin: 8vh 10vw;
+  margin: 8vh 6vw;
   .news-wrapper{
     padding-left: 8vw;
   }
@@ -123,7 +124,7 @@ export default {
 }
 @media screen and (max-width: 375px){
   .main{
-  margin: 8vh 10vw;
+  margin: 8vh 7vw;
   .news-wrapper{
     padding-left: 8vw;
   }
@@ -148,9 +149,9 @@ export default {
 }
 @media screen and (max-width: 320px){
   .main{
-  margin: 8vh 10vw;
+  margin: 8vh 6vw;
   .news-wrapper{
-    padding-left: 5vw;
+    padding-left: 4vw;
   }
 }
   .news-content-image{

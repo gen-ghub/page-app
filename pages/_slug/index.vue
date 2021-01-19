@@ -1,13 +1,18 @@
 <template>
   <div>
     <Header />
-    <main class="main">
-      <h1 class="title">{{ title }}</h1>
-      <p class="day">{{ day }}</p>
-      <p class="category">{{ category && category.name }}</p>
-      <img :src="image.url" alt="">
-      <div class="post" v-html="content"></div>
-    </main>
+    <div class="detalis-wrapper">
+      <div class="topics-title">
+        <h1>Topics</h1>
+      </div>
+      <main class="main">
+        <h1 class="title">{{ title }}</h1>
+        <p class="day">{{ day }}</p>
+        <p class="category">{{ category && category.name }}</p>
+        <img :src="image.url" alt="">
+        <div class="post" v-html="content"></div>
+      </main>
+    </div>
   </div>
 </template>
 
@@ -28,10 +33,12 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.detalis-wrapper{
+  background-color: rgba(#b9b9b9ad, 0.2);
+}
 .main {
   width: 960px;
   margin: 0 auto;
-  background-color: rgba(#b9b9b9ad, 0.2);
 }
 
 .title {

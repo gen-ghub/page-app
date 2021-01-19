@@ -1,12 +1,17 @@
 <template>
   <div>
     <Header />
-    <main class="main">
-      <img :src="image.url" alt="">
-      <h1 class="title">{{ title }}</h1>
-      <p class="day">{{ today }}</p>
-      <div class="post" v-html="text"></div>
-    </main>
+    <div class="detalis-wrapper">
+      <div class="topics-title flex justify-center ">
+        <h1 class="tracking-widest">Topics</h1>
+      </div>
+      <main class="main">
+        <img :src="image.url" alt="">
+        <h1 class="title">{{ title }}</h1>
+        <p class="day">{{ today }}</p>
+        <div class="post" v-html="text"></div>
+      </main>
+    </div>
   </div>
 </template>
 
@@ -27,6 +32,14 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+.detalis-wrapper{
+  background-color: rgba(#b9b9b9ad, 0.2);
+  .topics-title{
+    height: 25vh;
+    align-items: center;
+    font-size: 50px;
+  }
+}
 .main {
   width: 960px;
   margin: 0 auto;
