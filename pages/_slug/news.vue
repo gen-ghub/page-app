@@ -47,7 +47,7 @@ export default {
   margin-bottom: 5vh;
   width: 55vw;
   background-color: #fff;
-  border-top: 8px solid rgb(209, 136, 0);
+  border-top: 8px solid #F5DF4D;
   .day{
     margin-bottom: 4px;
   }

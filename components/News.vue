@@ -59,6 +59,11 @@ img{
   height: 400px;
   width: 400px;
 }
+@media screen and (max-width: 1024px){
+  .w-screen{
+    display: none;
+  }
+}
   @media screen and (max-width: 425px){
 
   }
