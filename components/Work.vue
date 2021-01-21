@@ -25,7 +25,7 @@
           </div>
           <nuxt-link to="/Contact" class="mb-32 contact-btn">
             <button
-              class="p-2 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700"
+              class="w-32 py-2 border border-gray-400 border-opacity-50 rounded text-black  hover:bg-gray-900 hover:text-white transition duration-700"
             >
               Contact
             </button>
@@ -64,7 +64,7 @@
           </div>
           <nuxt-link to="/Contact" class="mb-32 contact-btn">
             <button
-              class="p-2 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700"
+              class="w-32 py-2 border border-gray-400 border-opacity-50 rounded text-black  hover:bg-gray-900 hover:text-white transition duration-700"
             >
               Contact
             </button>
@@ -83,14 +83,14 @@
           <div>
             <nuxt-link to="/Link04">
               <button
-                class="tracking-widest text-lg p-2 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700"
+                class="tracking-widest text-lg w-32 py-2 border border-gray-400 border-opacity-50 rounded text-black  hover:bg-gray-900 hover:text-white transition duration-700"
               >
                 profile
               </button>
             </nuxt-link>
             <nuxt-link to="/Link05">
               <button
-                class="tracking-widest text-lg p-2 rounded text-black hover:bg-blue-900 hover:text-white transition duration-700"
+                class="tracking-widest text-lg w-32 py-2 border border-gray-400 border-opacity-50 rounded text-black  hover:bg-gray-900 hover:text-white transition duration-700"
               >
                 blog
               </button>

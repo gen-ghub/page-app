@@ -2,16 +2,18 @@
   <div>
     <Header />
     <div class="detalis-wrapper">
-      <div class="topics-title">
-        <h1>Topics</h1>
+      <div class="topics-title flex justify-center">
+        <h1 class="tracking-widest">Topics</h1>
       </div>
-      <main class="main">
-        <h1 class="title">{{ title }}</h1>
-        <p class="day">{{ day }}</p>
-        <p class="category">{{ category && category.name }}</p>
-        <img :src="image.url" alt="">
-        <div class="post" v-html="content"></div>
-      </main>
+      <div class="flex justify-center">
+        <section class="main shadow-2xl">
+          <p class="day">{{ day }}</p>
+          <h1 class="title">{{ title }}</h1>
+          <img :src="image.url" alt="">
+          <!-- <span class="category rounded">{{ category && category.name }}</span> -->
+          <div class="post tracking-wider leading-loose " v-html="content"></div>
+        </section>
+      </div>
     </div>
   </div>
 </template>
@@ -35,45 +37,93 @@ export default {
 <style lang="scss" scoped>
 .detalis-wrapper{
   background-color: rgba(#b9b9b9ad, 0.2);
+  .topics-title{
+    height: 25vh;
+    align-items: center;
+    font-size: 50px;
+  }
 }
 .main {
-  width: 960px;
-  margin: 0 auto;
+  padding: 40px 40px 15vh 40px;
+  margin-bottom: 10vh;
+  width: 55vw;
+  background-color: #fff;
+  border-top: 8px solid #F5DF4D;
+  .day{
+    margin-bottom: 4px;
+  }
+  // .category{
+  //   margin-left: 20px;
+  //   padding: 5px 10px;
+  //   font-size: 14px;
+  //   background-color: rgba(255, 217, 0, 0.432);
+  // }
+  .title {
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  img{
+    height: 300px;
+    width: 300px;
+    object-fit: cover;
+    margin-bottom: 50px;
+  }
 }
-
-.title {
-  margin-bottom: 20px;
+@media screen and (max-width: 1440px){
+  .main {
+  width: 60vw;
 }
-
-.publishedAt {
-  margin-bottom: 40px;
 }
-
-.post {
-  & > h1 {
+@media screen and (max-width: 1024px){
+  .main {
+  width: 70vw;
+}
+}
+@media screen and (max-width: 425px){
+  .detalis-wrapper{
+  .topics-title{
+    height: 20vh;
+    font-size: 40px;
+  }
+}
+.main {
+  padding: 30px 30px 10vh 30px;
+  width: 75vw;
+  .day{
+    font-size: 12px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 40px;
+  }
+  .post{
+    font-size: 14px;
+  }
+}
+}
+@media screen and (max-width: 375px){
+  .detalis-wrapper{
+  .topics-title{
+    height: 15vh;
     font-size: 30px;
-    font-weight: bold;
-    margin: 40px 0 20px;
-    background-color: #eee;
-    padding: 10px 20px;
-    border-radius: 5px;
   }
-
-  & > h2 {
-    font-size: 24px;
-    font-weight: bold;
-    margin: 40px 0 16px;
-    border-bottom: 1px solid #ddd;
+}
+  .main {
+  width: 78vw;
+  .day{
+    font-size: 10px;
   }
-
-  & > p {
-    line-height: 1.8;
-    letter-spacing: 0.2px;
+  .title {
+    font-size: 18px;
   }
-
-  & > ol {
-    list-style-type: decimal;
-    list-style-position: inside;
+  img{
+    height: 200px;
+    width: 200px;
   }
+}
 }
 </style>

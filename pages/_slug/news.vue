@@ -43,8 +43,8 @@ export default {
   }
 }
 .main {
-  padding: 40px;
-  margin-bottom: 5vh;
+  padding: 40px 40px 15vh 40px;
+  margin-bottom: 10vh;
   width: 55vw;
   background-color: #fff;
   border-top: 8px solid #F5DF4D;
@@ -62,8 +62,61 @@ export default {
     margin-bottom: 50px;
   }
 }
-
-
-
-
+@media screen and (max-width: 1440px){
+  .main {
+  width: 60vw;
+}
+}
+@media screen and (max-width: 1024px){
+  .main {
+  width: 70vw;
+}
+}
+@media screen and (max-width: 425px){
+  .detalis-wrapper{
+  .topics-title{
+    height: 20vh;
+    font-size: 40px;
+  }
+}
+.main {
+  padding: 30px 30px 10vh 30px;
+  width: 75vw;
+  .day{
+    font-size: 12px;
+  }
+  .title {
+    font-size: 20px;
+  }
+  img{
+    height: 250px;
+    width: 250px;
+    margin-bottom: 40px;
+  }
+  .post{
+    font-size: 14px;
+  }
+}
+}
+@media screen and (max-width: 375px){
+  .detalis-wrapper{
+  .topics-title{
+    height: 15vh;
+    font-size: 30px;
+  }
+}
+  .main {
+  width: 78vw;
+  .day{
+    font-size: 10px;
+  }
+  .title {
+    font-size: 18px;
+  }
+  img{
+    height: 200px;
+    width: 200px;
+  }
+}
+}
 </style>

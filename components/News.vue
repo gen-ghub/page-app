@@ -46,11 +46,13 @@
         </div>
       </section>
           <div class="flex justify-center items-center mb-20">
-            <nuxt-link class="col-start-5 col-span-1 border border-blue-900 px-12 py-2 rounded text-black hover:bg-gray-400  transition duration-700" to="/Link01">read more</nuxt-link>
+            <nuxt-link class="col-start-5 col-span-1 px-8 py-2 text-black rounded border border-gray-400 border-opacity-75 bg-gray-500 hover:bg-gray-900 hover:text-white transition duration-700" to="/Link01">read more</nuxt-link>
           </div>
     </section>
 </template>
+
 <style lang="scss" scoped>
+
 .top-news{
   height: 15vh;
 }

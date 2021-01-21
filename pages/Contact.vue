@@ -31,7 +31,7 @@
           </div>
           <p class="flex flex-col text-xl">
             <button
-              class="contact-btn text-white rounded border border-gray-400 border-opacity-75 py-2 bg-gray-700 hover:bg-gray-900 "
+              class="contact-btn text-white rounded border border-gray-400 border-opacity-75 py-2 bg-gray-700 hover:bg-gray-900 duration-500"
               @click="handleSubmit"
               v-text="'SEND'"
             />
