@@ -6,7 +6,7 @@
         <div class="flex justify-center items-center h-screen w-screen">
           <div class="text-white font-serif ">
             <h2 class="text-5xl font-thin pb-8">Just the way you ane</h2>
-            <h4 class="text-2xl font-extralight flex justify-center">OFFICE GENE</h4>
+            <h4 class="text-2xl font-extralight tracking-widest flex justify-center">OFFICE GENE</h4>
           </div>
         </div>
       </div>
@@ -15,6 +15,9 @@
 </template>
 
 <style lang="scss" scoped>
+h2{
+  font-family: cursive;
+}
   @media screen and (max-width: 425px){
     h2{
       font-size: 40px;

@@ -118,6 +118,9 @@
   </div>
 </template>
 <style lang="scss" scoped>
+h2{
+  font-family: cursive;
+}
 .user-img {
   height: 820px;
   width: 100%;
